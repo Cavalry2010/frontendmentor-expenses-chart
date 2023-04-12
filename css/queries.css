@@ -1,0 +1,63 @@
+@media (max-width: 26em) {
+  .account-box {
+    min-width: 0;
+    max-width: 34.5rem;
+  }
+
+  .balance-box {
+    padding: 2rem 2.4rem 2rem 2rem;
+    border-radius: 10px;
+  }
+
+  .balance-text {
+    font-size: 1.5rem;
+  }
+
+  .balance-num {
+    font-size: 2.4rem;
+  }
+
+  .bank-logo {
+    width: 18%;
+  }
+
+  .spending-box {
+    padding: 2rem 2rem 2.5rem;
+    border-radius: 10px;
+  }
+
+  .spending-heading {
+    font-size: 2.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .spending-bars-box {
+    gap: 1.2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .spending-bar {
+    width: 3.6rem;
+  }
+
+  .bar {
+    border-radius: 3px;
+  }
+
+  .bar::after {
+    font-size: 1.3rem;
+  }
+
+  .spending-day {
+    font-size: 1.2rem;
+  }
+
+  .totals-box {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .total-num {
+    font-size: 3rem;
+  }
+}

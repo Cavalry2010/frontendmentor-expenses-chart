@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="sr-only">Account Summary</h1>
+      <div class="container align-center">
+        <div class="account-box">
+          <div class="balance-box">
+            <div class="my-balance">
+              <p class="balance-text">My balance</p>
+              <p class="balance-num">&dollar;921.48</p>
+            </div>
+            <img class="bank-logo" src="./images/logo.svg" alt="Logo" />
+          </div>
+          <div class="spending-box">
+            <h2 class="spending-heading">Spending &#8211; Last 7 days</h2>
+            <div class="spending-bars-box"></div>
+            <div class="totals-box">
+              <div class="totals">
+                <p class="total">Total this month</p>
+                <p class="total-num">&dollar;478.33</p>
+              </div>
+              <div class="percentages">
+                <p class="percentage">+2.4%</p>
+                <p class="percentage-text">from last month</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Alejandro Perdomo</a>.
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #f8e9dd;
+}
+
+.sr-only {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute !important;
+  border: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.account-box {
+  min-width: 54rem;
+}
+
+.balance-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fffaf5;
+  background-color: #ec775f;
+  padding: 2.4rem 3.2rem 2.4rem 3rem;
+  border-radius: 20px;
+  margin-bottom: 2.5rem;
+}
+
+.balance-text {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.balance-num {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.spending-box {
+  padding: 3rem 4rem 4.5rem;
+  background-color: #fffaf5;
+  border-radius: 20px;
+}
+
+.spending-heading {
+  font-size: 3.2rem;
+  color: #382314;
+  margin-bottom: 7rem;
+}
+
+.spending-bars-box {
+  display: flex;
+  gap: 1.8rem;
+  align-items: end;
+  padding-bottom: 3rem;
+  border-bottom: solid 2px #f8e9dd;
+}
+
+.spending-bar {
+  width: 5rem;
+
+  text-align: center;
+  position: relative;
+}
+
+.bar {
+  width: 100%;
+  background-color: #ec775f;
+  border-radius: 5px;
+}
+
+.bar::after {
+  content: "$" attr(data-money);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fffaf5;
+  background-color: #382314;
+  padding: 0.5rem;
+  border-radius: 5px;
+
+  position: absolute;
+  top: -4.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  visibility: hidden;
+  opacity: 0;
+}
+
+.bar--biggest {
+  background-color: #76b5bc;
+}
+
+.bar:hover {
+  background-color: #f0927f;
+}
+
+.bar:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.bar--biggest:hover {
+  background-color: #91c4c9;
+}
+
+.spending-day {
+  font-size: 1.5rem;
+  color: #93867b;
+  margin-top: 1rem;
+}
+
+.totals-box {
+  margin-top: 3rem;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  color: #93867b;
+}
+
+.total-num {
+  font-size: 4.7rem;
+  font-weight: 700;
+  color: #382314;
+  line-height: 1;
+  margin-top: 0.8rem;
+}
+
+.percentages {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.percentage {
+  font-weight: 700;
+  color: #382314;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
