@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-expenses-chart-component-that-loads-data-from-local-json-BC1nwUQQ0A)
 - Live Site URL: [Expenses Chart](https://expenses-chart-alejandro.netlify.app)
 
 ## My process
